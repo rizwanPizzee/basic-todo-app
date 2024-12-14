@@ -1,0 +1,125 @@
+body {
+    font-family: Arial;
+}
+
+.external-to-do-container {
+    display: flex;
+    justify-content: center;
+}
+
+.to-do-container {
+    background-color: hsl(203, 85%, 10%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.to-do-container h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.to-do-input {
+    border-radius: 20px;
+    border: none;
+    padding: 4px 10px 4px 10px;
+    outline: none;
+    margin-right: 8px;
+    margin-left: 40px;
+    font-size: 1.2rem;
+    color: rgb(72, 72, 72);
+    font-family: Arial;
+}
+
+.to-do-input:focus {
+    outline: 1px solid rgb(2, 153, 180);
+    box-shadow: 0px 0px 5px 0px rgb(12, 219, 255);
+}
+
+.add-task {
+    border: none;
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    margin-right: 40px;
+    font-weight: bolder;
+    color: rgb(30, 92, 2);
+    background-color: rgb(158, 253, 16);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.add-task:hover {
+    background-color: rgb(186, 250, 90);
+}
+
+.to-do-container hr {
+    border-color: rgb(42, 209, 173);
+}
+
+.to-do-task-container {
+    margin-top: 20px;
+}
+
+.to-do-task-list {
+    list-style: none;
+    border-radius: 8px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(2, 153, 180);
+    padding: 5px 10px;
+    margin: 10px 0px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgb(12, 219, 255);
+}
+
+.to-do-task-list-text {
+    flex: 1;
+}
+
+.to-do-task-container button {
+    border: none;
+    border-radius: 4px;
+    margin-left: 7px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.15s;
+}
+
+.to-do-del-btn {
+    background-color: transparent;
+
+}
+
+.to-do-del-btn img {
+    height: 23px;
+    vertical-align: middle;
+}
+
+.to-do-up-btn {
+    background-color: greenyellow;
+}
+
+.to-do-down-btn {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.to-do-task-container button:hover {
+    opacity: 0.95;
+}
+
+.to-do-task-container button:active,
+.add-task:active {
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 420px) {
+    .to-do-input {
+        width: 200px;
+    }
+
+}
